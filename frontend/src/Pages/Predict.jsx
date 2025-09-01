@@ -6,6 +6,8 @@ import { toast } from 'react-toastify'
 import axios from 'axios'
 import { server } from '../../server'
 import { RxCross2 } from "react-icons/rx";
+
+
 const Predict = () => {
   const navigate = useNavigate()
   const [patientName, setPatientName] = useState("")
