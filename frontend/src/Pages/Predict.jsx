@@ -77,7 +77,7 @@ const Predict = () => {
       }
 
       else {
-        const response = await axios.post("http://localhost:8000/predict",
+        const response = await axios.post("https://fastapidiabetesprediction.onrender.com/predict",
           {
             Pregnancies, Glucose, BloodPressure, SkinThickness,
             Insulin, BMI, DiabetesPedigreeFunction, Age
