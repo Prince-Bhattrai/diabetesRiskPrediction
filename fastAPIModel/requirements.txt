@@ -1,0 +1,14 @@
+fastapi==0.116.1
+uvicorn==0.35.0
+pydantic==2.11.7
+pydantic-settings==2.10.1
+python-dotenv==1.1.1
+motor==3.7.1       # async driver for MongoDB
+pymongo==4.14.0    # MongoDB core client
+scikit-learn==1.6.1
+numpy==2.2.6
+pandas==2.3.0
+scipy==1.16.1
+joblib==1.5.1      # for model saving/loading
+python-multipart==0.0.20  # for form-data/file uploads if needed
+gunicorn==23.0.0   # required by Render for production serving
