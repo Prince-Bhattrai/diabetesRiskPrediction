@@ -1,0 +1,118 @@
+.predict-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+    position: relative;
+}
+
+.predict-page form{
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0.2px rgba(68, 68, 68, 0.171);
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.predict-page fieldset{
+    display: flex;
+    gap: 0px 10px;
+    
+}
+
+.predict-page fieldset fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.predict-page .last{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+.predict-page  label,.predict-page fieldset{
+    border: none;
+}
+.predict-page  label{
+    display: flex;
+    gap: 10px;
+    margin: 0px 0px 5px 0px;
+}
+.predict-page input{
+    padding: 8px 10px;
+    color: white;
+    background-color: #242424;
+    border: none;
+    border-radius: 5px;
+}
+
+.predict-page input:focus{
+    outline: none;
+    color: white;
+}
+.predict-page button{
+    padding: 10px 12px ;
+    
+    width:90%;
+    margin: 20px 20px 0px 20px ;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;    
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.predict-page button:hover{
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.predict-page span{
+    font-weight: bold;
+    color: rgb(6, 84, 230);
+    cursor: pointer;
+}
+.predict-page .predict-show{
+    position: fixed;
+    bottom: 70px;
+    border-radius: 20px;
+    height: 200px;
+    width: 300px;
+    background-color: #1b1b1b;
+    transition: 0.6s  ease-in-out;
+    box-shadow: 0px 0px 05px 0px rgba(104, 103, 103, 0.418);
+}
+
+.predict-page .hide-pred-box{
+    bottom: -200px;
+}
+
+
+.predict-page input::-webkit-inner-spin-button{
+    display: none;
+}
+
+@media(max-width:500px){
+    .predict-page form fieldset{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .predict-page{
+        justify-content: space-around;
+        padding: 20px;
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+        height: 100vh;
+
+        
+    }
+    
+    
+}

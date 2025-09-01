@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.wrapper{
+  display: flex;
+}
+
+
+.sidebar-app{
+  width: 20vw;
+  height: 100vh;
+  border-right: 1px solid rgb(29, 29, 29);
+  align-items: center;
+  justify-content: center;
+}
+
+.routes{
+  width: 80vw;
+  height: 100%;
+  background-color: rgb(12, 12, 12);
+  height: 100vh;
+}
+.menu{
+   display: none; 
+} 
+
+body{
+  background-color: black;
+  color: white;
+}
+
+.sidebar-mobile{
+  position: fixed;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  left: -400px;
+  background-color: #181818;
+  transition: 0.5s ease-in-out;
+}
+
+.side-barmobile-visible{
+  left: 0;
+  z-index: 1;
+  
+ 
+
+}
+*::-webkit-scrollbar{
+  display: none;
+}
+
+.login-button{
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  padding: 8px 10px;
+  border-radius: 20px;
+  border: 1px solid #696767;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.login-button:hover{
+  background-color: white;
+  color: black;
+}
+
+.logout-pop-up{
+  height:200px;
+  width: 320px;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #1a1919c4;
+  
+
+}
+.logout-pop-up .buttons{
+  width: 320px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  
+}
+.logout-pop-up .buttons button{
+  padding: 9px 20px;
+  border-radius: 30px;
+  border: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  color: #fff;
+  background-color: #444;
+}
+
+.logout-pop-up .buttons button:hover{
+  transform: rotate(360deg);
+  color: black;
+  background-color: white;
+}
+.hidelogoutpopup{
+  right: -350px;
+  bottom: -250px;
+}
+
+@media(min-width:750px){
+  .side-barmobile-visible{
+    display: none;
+    
+  }
+  .sidebar-mobile{
+    display: none;
+  }
+}
+
+
+@media(max-width:750px){
+  .routes{
+    width: 100vw;
+  }
+  .sidebar-app{
+    display: none;
+  }
+  .menu{
+    display: block;
+    position:fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
+
+  }
+}

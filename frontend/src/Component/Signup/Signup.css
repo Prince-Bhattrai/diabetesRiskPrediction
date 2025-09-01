@@ -1,0 +1,65 @@
+.signup-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.signup-container form{
+    display: flex;
+    background-color: #131313;
+    width: 400px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px #272727;
+
+}
+
+.signup-container .signup-buttom{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+
+}
+.signup-container .signup-buttom span{
+    font-weight: bold;
+    color: rgb(47, 89, 228);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.signup-container form input{
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 0.1px solid  #302f2f;
+    background-color: #201f1f;
+    color: white;
+    font-size: 15px;
+}
+
+.signup-container form input:focus{
+    outline: none;
+    border: 1px solid rgb(3, 26, 129);
+}
+.signup-container form button{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+
+}
+
+.signup-container form button:hover{
+    background-color: #0c0c0c;
+}

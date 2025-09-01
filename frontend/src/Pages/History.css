@@ -1,0 +1,150 @@
+.history-page{
+    height: 89vh;
+    overflow-y: scroll;
+    padding: 60px 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+
+.history-page .outer{
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0.2px #181818 ;
+    padding: 10px 20px;
+
+}
+
+
+.history-page .outer .hist-top{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+
+.history-page .lst-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.history-page .lst-btn button{
+    padding: 7px 20px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #444;
+    transition: 0.3s ease-in-out;
+}
+.history-page .lst-btn button:hover{
+    background-color: white;
+    transform: scale(1.05);
+}
+
+
+.history-page .danger{
+        color: red;
+        font-weight: 800;
+}
+
+.history-page .hist-top p{
+    font-size: 18px;
+}
+
+.history-page .normal{
+    color: rgb(2, 100, 15);
+    font-weight: 800;
+}
+
+.history-page .hist-top p{
+    display: flex;
+    gap: 10px;
+}
+
+.top-search{
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid #444;
+}
+.top-search p{
+    margin-top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+.top-search p:hover{
+    color: #666565;
+}
+
+.top-search input{
+    padding: 8px 15px;
+    background-color: #181818;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    
+}
+
+
+
+
+.top-search input:focus{
+    outline: none;
+}
+
+
+.deletepopup{
+    width: 300px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    border-radius: 20px;
+    z-index: 3;
+    background-color: #303030;
+    position: fixed;
+}
+.deletepopup p{
+    text-align: center;
+    padding: 20px;
+
+}
+
+.deletepopup .buttons{
+    margin-top:70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.deletepopup .buttons button{
+    padding: 8px 14px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 60px;
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
+}
+
+.deletepopup .buttons button:hover{
+    transform: rotate(360deg);
+    color: white;
+    background-color: black;
+}

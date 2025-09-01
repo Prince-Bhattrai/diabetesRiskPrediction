@@ -1,0 +1,11 @@
+.home-page{
+    overflow-y: scroll;
+    height: 92vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+li{
+    margin-left: 20px;
+}
