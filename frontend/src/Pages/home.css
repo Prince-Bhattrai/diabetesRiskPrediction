@@ -1,6 +1,6 @@
 .home-page{
     overflow-y: scroll;
-    height: 92vh;
+    height: 90vh;
     padding: 30px;
     display: flex;
     flex-direction: column;
