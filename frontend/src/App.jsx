@@ -24,7 +24,7 @@ function App() {
   const logouthandler = ()=>{
     localStorage.removeItem("token")
     localStorage.removeItem("user")
-    window.location.href = "/signup"
+    window.location.href = "/"
   }
 
   return (
