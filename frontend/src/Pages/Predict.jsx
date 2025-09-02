@@ -99,7 +99,7 @@ const Predict = () => {
           setPregnancies("")
           setSkinThickness("")
 
-          if (response.data.data.prediction === 1) {
+          if (response.data.prediction === 1) {
             setPred("The patient is likely to have diabetes.");
           } else {
             setPred("The patient is not likely to have diabetes.");
