@@ -17,6 +17,8 @@ export const AppProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
+    const res = axios.post("https://fastapidiabetesprediction.onrender.com/")
+    console.log(res)
     const currUser = localStorage.getItem("user");
     if (currUser) {
       try {
@@ -29,6 +31,7 @@ export const AppProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
+    
     const fetchHist = async () => {
       if (!user || !user._id) return; 
       try {
