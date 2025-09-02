@@ -66,39 +66,6 @@ It supports **user authentication, secure data storage**, and **prediction for b
 🚀 Getting Started
 1️⃣Clone the Repository
 
-git clone https://github.com/yourusername/diabetes-prediction-app.git
-cd diabetes-prediction-app
-Backend Setup
-FastAPI (ML Model)
-
-cd backend/fastapi-model
-pip install -r requirements.txt
-uvicorn main:app --reload
-Node.js/Express (Auth + DB)
-
-cd backend/express-server
-npm install
-npm run dev
-3Frontend Setup (React)
- 
-cd frontend/react-app
-npm install
-npm start
-Dataset
-Source: Kaggle - Pima Indians Diabetes Database
-
-Model trained using Logistic Regression.
-
-Features include: Pregnancies, Glucose, Blood Pressure, Skin Thickness, Insulin, BMI, Diabetes Pedigree Function, Age.
-
-Usage
-Signup/Login → Access personalized dashboard.
-
-Enter patient data → Get diabetes prediction.
-
-History → View/delete past predictions (for registered users).
-
-Guest mode → Make predictions without storing data.
 
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
@@ -108,4 +75,3 @@ Feel free to fork the repo and submit a pull request.
 This project is licensed under the MIT License.
 
 
-Copy code
