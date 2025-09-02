@@ -64,7 +64,7 @@ const Signup = () => {
       <form action="" onSubmit={submitHandler}>
         {!signup ? "" : <input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="Enter your full name" />}
         <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder='Enter your email' />
-        <input value={password} onChange={(e) => setPassword(e.target.value)} type="text" placeholder='Enter secure password' />
+        <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder='Enter secure password' />
         <button type='submit'>Submit</button>
         <div className="signup-buttom">
           <input type="checkbox" required />
