@@ -14,6 +14,7 @@ with open("d_model.pkl", "rb") as f:
 origins = [
     "https://diabetesriskprediction-gf58.onrender.com", 
     "http://localhost:5173",  
+    "https://diabetes-risk-prediction-six.vercel.app/",
 ]
 
 app.add_middleware(
