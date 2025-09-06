@@ -29,7 +29,7 @@ class PatientData(BaseModel):
     Pregnancies: Annotated[int, Field(..., ge=0)]
     Glucose: Annotated[int, Field(..., ge=0)]
     BloodPressure: Annotated[int, Field(..., ge=0)]
-    SkinThickness: Annotated[int, Field(..., ge=0)]
+    SkinThickness: Annotated[float, Field(..., ge=0)]
     Insulin: Annotated[int, Field(..., ge=0)]
     BMI: Annotated[float, Field(..., ge=0)]
     DiabetesPedigreeFunction: Annotated[float, Field(..., ge=0)]
