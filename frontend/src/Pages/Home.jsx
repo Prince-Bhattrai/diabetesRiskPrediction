@@ -21,7 +21,7 @@ const Home = () => {
         </p>
         <p>
           The backend is powered by <strong>FastAPI</strong>, securely connected with 
-          <strong> Node.js & Express</strong>. We’ve also built a modern 
+          <strong> Node.js & Express</strong>. We’ve also built a 
           <strong> React frontend</strong> for a smooth user experience. 
           Features like <strong>JWT authentication</strong>, <strong>MongoDB storage</strong>, 
           <strong> bcrypt password security</strong>, and <strong>Nodemailer</strong> for 
